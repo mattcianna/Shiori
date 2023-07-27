@@ -40,6 +40,13 @@ import AppCenterCrashes
                 Analytics.self,
                 Crashes.self,
             ])
+        case "getAppGroupContainer":
+            if let appGroupId = Bundle.main.infoDictionary?["APP_GROUP_IDENTIFIER"] as? String {
+                result(appGroupId)
+            } else {
+                result(nil)
+            }
+            return
         case "trackEvent":
             trackEvent(call: call, result: result)
             return

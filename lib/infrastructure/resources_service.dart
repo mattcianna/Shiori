@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:path_provider_foundation/path_provider_foundation.dart';
+import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 import 'package:shiori/domain/assets.dart';
 import 'package:shiori/domain/enums/enums.dart';
 import 'package:shiori/domain/extensions/string_extensions.dart';
@@ -13,6 +15,7 @@ import 'package:shiori/domain/services/logging_service.dart';
 import 'package:shiori/domain/services/network_service.dart';
 import 'package:shiori/domain/services/resources_service.dart';
 import 'package:shiori/domain/services/settings_service.dart';
+import 'package:shiori/infrastructure/telemetry/flutter_appcenter_bundle.dart';
 
 const _tempDirName = 'shiori_temp';
 const _tempAssetsDirName = 'shiori_assets';
@@ -38,11 +41,32 @@ class ResourceServiceImpl implements ResourceService {
   });
 
   Future<void> init() async {
-    final dir = await getApplicationSupportDirectory();
+    final dir = await _getStorageDirectory();
 
     _tempPath = join(dir.path, _tempDirName);
     _assetsPath = join(dir.path, _tempAssetsDirName);
     await _deleteDirectoryIfExists(_tempPath);
+  }
+
+  /// Returns the directory used to store the data.
+  /// If is iOS, let's use the app group in order to make data visible to the widget.
+  Future<Directory> _getStorageDirectory() async {
+    if (!kIsWeb && Platform.isIOS) {
+      final PathProviderFoundation providerFoundation =
+          PathProviderFoundation();
+      // It reads the value from XCConfig file (iOS standard).
+      final appGroupContainerName = await AppCenter.getAppGroupContainer();
+      if (appGroupContainerName != null) {
+        final containerPath = await providerFoundation.getContainerPath(
+          appGroupIdentifier: appGroupContainerName,
+        );
+        if (containerPath != null) {
+          return Directory(containerPath);
+        }
+      }
+    }
+    // Let's use the standard directory for other platforms.
+    return getApplicationSupportDirectory();
   }
 
   @visibleForTesting

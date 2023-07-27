@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 const _methodChannelName = 'com.github.wolfteam.shiori';
@@ -33,8 +34,17 @@ class AppCenter {
     });
   }
 
+  /// Returns the AppGroup string (used to display data in widget).
+  static Future<String?> getAppGroupContainer() async {
+    if (kIsWeb || !Platform.isIOS) {
+      return null;
+    }
+    return _methodChannel.invokeMethod<String?>('getAppGroupContainer');
+  }
+
   /// Track events
-  static Future<void> trackEventAsync(String name, [Map<String, String?>? properties]) async {
+  static Future<void> trackEventAsync(String name,
+      [Map<String, String?>? properties]) async {
     if (!isPlatformSupported) {
       return;
     }

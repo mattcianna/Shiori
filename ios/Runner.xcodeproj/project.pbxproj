@@ -13,8 +13,36 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		9BBF4D612A700A7A00F621E9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBF4D602A700A7A00F621E9 /* WidgetKit.framework */; };
+		9BBF4D632A700A7A00F621E9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BBF4D622A700A7A00F621E9 /* SwiftUI.framework */; };
+		9BBF4D662A700A7A00F621E9 /* widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF4D652A700A7A00F621E9 /* widgetBundle.swift */; };
+		9BBF4D682A700A7A00F621E9 /* widgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF4D672A700A7A00F621E9 /* widgetLiveActivity.swift */; };
+		9BBF4D6A2A700A7A00F621E9 /* ShioriWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF4D692A700A7A00F621E9 /* ShioriWidget.swift */; };
+		9BBF4D6C2A700A7C00F621E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D6B2A700A7C00F621E9 /* Assets.xcassets */; };
+		9BBF4D702A700A7C00F621E9 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9BBF4D5F2A700A7A00F621E9 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9BBF4D7F2A70107800F621E9 /* MaterialRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF4D7E2A70107800F621E9 /* MaterialRoot.swift */; };
+		9BBF4D812A70136400F621E9 /* DisplayMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF4D802A70136400F621E9 /* DisplayMaterial.swift */; };
+		9BBF4D852A70142300F621E9 /* GenshinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF4D842A70142300F621E9 /* GenshinRepository.swift */; };
+		9BBF4D8C2A711B7A00F621E9 /* fetters-of-the-dandelion-gladiator.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D882A711B7900F621E9 /* fetters-of-the-dandelion-gladiator.webp */; };
+		9BBF4D8D2A711B7A00F621E9 /* debris-of-decarabians-city.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D892A711B7900F621E9 /* debris-of-decarabians-city.webp */; };
+		9BBF4D8E2A711B7A00F621E9 /* grain-of-aerosiderite.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D8A2A711B7A00F621E9 /* grain-of-aerosiderite.webp */; };
+		9BBF4D8F2A711B7A00F621E9 /* boreal-wolfs-milk-tooth.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D8B2A711B7A00F621E9 /* boreal-wolfs-milk-tooth.webp */; };
+		9BBF4D942A711B9300F621E9 /* teachings-of-elegance.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D902A711B9200F621E9 /* teachings-of-elegance.webp */; };
+		9BBF4D952A711B9300F621E9 /* teachings-of-admonition.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D912A711B9300F621E9 /* teachings-of-admonition.webp */; };
+		9BBF4D962A711B9300F621E9 /* teachings-of-ballad.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D922A711B9300F621E9 /* teachings-of-ballad.webp */; };
+		9BBF4D972A711B9300F621E9 /* teachings-of-diligence.webp in Resources */ = {isa = PBXBuildFile; fileRef = 9BBF4D932A711B9300F621E9 /* teachings-of-diligence.webp */; };
 		B68A1D8F1997E0A11B7321C4 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF110B46986EE0F42753B6E /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BBF4D6E2A700A7C00F621E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BBF4D5E2A700A7A00F621E9;
+			remoteInfo = widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
@@ -25,6 +53,17 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBF4D712A700A7C00F621E9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9BBF4D702A700A7C00F621E9 /* widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -47,6 +86,27 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B71FDB02A7270C900555611 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		9BBF4D5F2A700A7A00F621E9 /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBF4D602A700A7A00F621E9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9BBF4D622A700A7A00F621E9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9BBF4D652A700A7A00F621E9 /* widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetBundle.swift; sourceTree = "<group>"; };
+		9BBF4D672A700A7A00F621E9 /* widgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetLiveActivity.swift; sourceTree = "<group>"; };
+		9BBF4D692A700A7A00F621E9 /* ShioriWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShioriWidget.swift; sourceTree = "<group>"; };
+		9BBF4D6B2A700A7C00F621E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BBF4D6D2A700A7C00F621E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BBF4D7E2A70107800F621E9 /* MaterialRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialRoot.swift; sourceTree = "<group>"; };
+		9BBF4D802A70136400F621E9 /* DisplayMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMaterial.swift; sourceTree = "<group>"; };
+		9BBF4D822A7013CC00F621E9 /* widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgetExtension.entitlements; sourceTree = "<group>"; };
+		9BBF4D842A70142300F621E9 /* GenshinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenshinRepository.swift; sourceTree = "<group>"; };
+		9BBF4D882A711B7900F621E9 /* fetters-of-the-dandelion-gladiator.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fetters-of-the-dandelion-gladiator.webp"; sourceTree = "<group>"; };
+		9BBF4D892A711B7900F621E9 /* debris-of-decarabians-city.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "debris-of-decarabians-city.webp"; sourceTree = "<group>"; };
+		9BBF4D8A2A711B7A00F621E9 /* grain-of-aerosiderite.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "grain-of-aerosiderite.webp"; sourceTree = "<group>"; };
+		9BBF4D8B2A711B7A00F621E9 /* boreal-wolfs-milk-tooth.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "boreal-wolfs-milk-tooth.webp"; sourceTree = "<group>"; };
+		9BBF4D902A711B9200F621E9 /* teachings-of-elegance.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "teachings-of-elegance.webp"; sourceTree = "<group>"; };
+		9BBF4D912A711B9300F621E9 /* teachings-of-admonition.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "teachings-of-admonition.webp"; sourceTree = "<group>"; };
+		9BBF4D922A711B9300F621E9 /* teachings-of-ballad.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "teachings-of-ballad.webp"; sourceTree = "<group>"; };
+		9BBF4D932A711B9300F621E9 /* teachings-of-diligence.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "teachings-of-diligence.webp"; sourceTree = "<group>"; };
 		DE0DF6D029F23A03008A59BC /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +119,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BBF4D5C2A700A7A00F621E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF4D632A700A7A00F621E9 /* SwiftUI.framework in Frameworks */,
+				9BBF4D612A700A7A00F621E9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				5FF110B46986EE0F42753B6E /* Pods_Runner.framework */,
+				9BBF4D602A700A7A00F621E9 /* WidgetKit.framework */,
+				9BBF4D622A700A7A00F621E9 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,8 +165,11 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
+				9B71FDB02A7270C900555611 /* Config.xcconfig */,
+				9BBF4D822A7013CC00F621E9 /* widgetExtension.entitlements */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
+				9BBF4D642A700A7A00F621E9 /* widget */,
 				97C146EF1CF9000F007C117D /* Products */,
 				8B4E51E316A41F23084F398E /* Pods */,
 				1ABBC9296FFE6A272134D85D /* Frameworks */,
@@ -106,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
+				9BBF4D5F2A700A7A00F621E9 /* widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,6 +201,61 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		9BBF4D642A700A7A00F621E9 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF4D872A711B4500F621E9 /* PreviewImages */,
+				9BBF4D862A7015CD00F621E9 /* Presentation */,
+				9BBF4D832A70141700F621E9 /* Repository */,
+				9BBF4D792A700D7100F621E9 /* Model */,
+				9BBF4D652A700A7A00F621E9 /* widgetBundle.swift */,
+				9BBF4D672A700A7A00F621E9 /* widgetLiveActivity.swift */,
+				9BBF4D6B2A700A7C00F621E9 /* Assets.xcassets */,
+				9BBF4D6D2A700A7C00F621E9 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		9BBF4D792A700D7100F621E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF4D7E2A70107800F621E9 /* MaterialRoot.swift */,
+				9BBF4D802A70136400F621E9 /* DisplayMaterial.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BBF4D832A70141700F621E9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF4D842A70142300F621E9 /* GenshinRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9BBF4D862A7015CD00F621E9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF4D692A700A7A00F621E9 /* ShioriWidget.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9BBF4D872A711B4500F621E9 /* PreviewImages */ = {
+			isa = PBXGroup;
+			children = (
+				9BBF4D8B2A711B7A00F621E9 /* boreal-wolfs-milk-tooth.webp */,
+				9BBF4D892A711B7900F621E9 /* debris-of-decarabians-city.webp */,
+				9BBF4D882A711B7900F621E9 /* fetters-of-the-dandelion-gladiator.webp */,
+				9BBF4D8A2A711B7A00F621E9 /* grain-of-aerosiderite.webp */,
+				9BBF4D912A711B9300F621E9 /* teachings-of-admonition.webp */,
+				9BBF4D922A711B9300F621E9 /* teachings-of-ballad.webp */,
+				9BBF4D932A711B9300F621E9 /* teachings-of-diligence.webp */,
+				9BBF4D902A711B9200F621E9 /* teachings-of-elegance.webp */,
+			);
+			name = PreviewImages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,15 +271,34 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				74F08B1659F4EC6A3B28A902 /* [CP] Embed Pods Frameworks */,
+				9BBF4D712A700A7C00F621E9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9BBF4D6F2A700A7C00F621E9 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9BBF4D5E2A700A7A00F621E9 /* widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BBF4D752A700A7C00F621E9 /* Build configuration list for PBXNativeTarget "widgetExtension" */;
+			buildPhases = (
+				9BBF4D5B2A700A7A00F621E9 /* Sources */,
+				9BBF4D5C2A700A7A00F621E9 /* Frameworks */,
+				9BBF4D5D2A700A7A00F621E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetExtension;
+			productName = widgetExtension;
+			productReference = 9BBF4D5F2A700A7A00F621E9 /* widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -157,12 +306,16 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
+					};
+					9BBF4D5E2A700A7A00F621E9 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
@@ -180,6 +333,7 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
+				9BBF4D5E2A700A7A00F621E9 /* widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -196,6 +350,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BBF4D5D2A700A7A00F621E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF4D8D2A711B7A00F621E9 /* debris-of-decarabians-city.webp in Resources */,
+				9BBF4D962A711B9300F621E9 /* teachings-of-ballad.webp in Resources */,
+				9BBF4D942A711B9300F621E9 /* teachings-of-elegance.webp in Resources */,
+				9BBF4D6C2A700A7C00F621E9 /* Assets.xcassets in Resources */,
+				9BBF4D8F2A711B7A00F621E9 /* boreal-wolfs-milk-tooth.webp in Resources */,
+				9BBF4D8E2A711B7A00F621E9 /* grain-of-aerosiderite.webp in Resources */,
+				9BBF4D952A711B9300F621E9 /* teachings-of-admonition.webp in Resources */,
+				9BBF4D972A711B9300F621E9 /* teachings-of-diligence.webp in Resources */,
+				9BBF4D8C2A711B7A00F621E9 /* fetters-of-the-dandelion-gladiator.webp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -206,6 +376,7 @@
 			files = (
 			);
 			inputPaths = (
+				"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}",
 			);
 			name = "Thin Binary";
 			outputPaths = (
@@ -280,7 +451,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BBF4D5B2A700A7A00F621E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF4D6A2A700A7A00F621E9 /* ShioriWidget.swift in Sources */,
+				9BBF4D852A70142300F621E9 /* GenshinRepository.swift in Sources */,
+				9BBF4D682A700A7A00F621E9 /* widgetLiveActivity.swift in Sources */,
+				9BBF4D812A70136400F621E9 /* DisplayMaterial.swift in Sources */,
+				9BBF4D662A700A7A00F621E9 /* widgetBundle.swift in Sources */,
+				9BBF4D7F2A70107800F621E9 /* MaterialRoot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BBF4D6F2A700A7C00F621E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BBF4D5E2A700A7A00F621E9 /* widgetExtension */;
+			targetProxy = 9BBF4D6E2A700A7C00F621E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -304,6 +496,7 @@
 /* Begin XCBuildConfiguration section */
 		249021D3217E4FDB00AE95B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B71FDB02A7270C900555611 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -357,11 +550,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_GROUP_IDENTIFIER = "$(APP_GROUP_IDENTIFIER)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 5FZFDR9XVF;
+				DEVELOPMENT_TEAM = 4WQP76C468;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,7 +573,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miraisoft.shiori;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattcianna.shioritest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -388,6 +583,7 @@
 		};
 		97C147031CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B71FDB02A7270C900555611 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -444,6 +640,7 @@
 		};
 		97C147041CF9000F007C117D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B71FDB02A7270C900555611 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -499,11 +696,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_GROUP_IDENTIFIER = "$(APP_GROUP_IDENTIFIER)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 5FZFDR9XVF;
+				DEVELOPMENT_TEAM = 4WQP76C468;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -520,7 +719,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miraisoft.shiori;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattcianna.shioritest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -533,11 +732,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APP_GROUP_IDENTIFIER = "$(APP_GROUP_IDENTIFIER)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 5FZFDR9XVF;
+				DEVELOPMENT_TEAM = 4WQP76C468;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,13 +755,129 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.miraisoft.shiori;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattcianna.shioritest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
+		};
+		9BBF4D722A700A7C00F621E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_GROUP_IDENTIFIER = "$(APP_GROUP_IDENTIFIER)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = widgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WQP76C468;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattcianna.shioritest.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BBF4D732A700A7C00F621E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_GROUP_IDENTIFIER = "$(APP_GROUP_IDENTIFIER)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = widgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WQP76C468;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattcianna.shioritest.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BBF4D742A700A7C00F621E9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_GROUP_IDENTIFIER = "$(APP_GROUP_IDENTIFIER)";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = widgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4WQP76C468;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattcianna.shioritest.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
 		};
 /* End XCBuildConfiguration section */
 
@@ -581,6 +898,16 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BBF4D752A700A7C00F621E9 /* Build configuration list for PBXNativeTarget "widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBF4D722A700A7C00F621E9 /* Debug */,
+				9BBF4D732A700A7C00F621E9 /* Release */,
+				9BBF4D742A700A7C00F621E9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
